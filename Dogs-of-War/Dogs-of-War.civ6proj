@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>Dogs-of-War</Name>
+    <Guid>45feca44-3811-40e2-b3b5-c7377fa0e8ef</Guid>
+    <ProjectGuid>a0e01108-781c-441f-8db2-03bf50147102</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Combat change, balance mod for land domination game modes.</Teaser>
+    <Description>Combat change, balance mod for domination game modes.
+
+Melee class promotions allow to heal without resting and increased healing in any territory.
+Anti-Cavalry class promotions allow to heal without resting and incresed healing in friendly territory.
+Light Cavalry (also Ranged Cavalry) class can move after attack.
+Heavy Cavalry class pushes unit back on major victory.
+
+All land combat classes can choose Dogs of War promotion at level 4, that gives them additional combat strength.
+Barbarians soft xp cap and level increased.
+Slightly increased Spearman and Heavy Chariot strength for Ancient Era balance.</Description>
+    <Authors>Sasabmeg</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>false</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <AssemblyName>Dogs-of-War</AssemblyName>
+    <RootNamespace>Dogs-of-War</RootNamespace>
+    <Homepage>http://github.com/Sasabmeg/civ6-dogs-of-war</Homepage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Dogs_of_War.Art.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
