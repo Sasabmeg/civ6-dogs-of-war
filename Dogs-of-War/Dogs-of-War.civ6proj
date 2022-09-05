@@ -52,6 +52,7 @@ CHANGES:
     <AssemblyName>Dogs-of-War</AssemblyName>
     <RootNamespace>Dogs-of-War</RootNamespace>
     <Homepage>http://github.com/Sasabmeg/civ6-dogs-of-war</Homepage>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="Gameplay"><File>DogsOfWar.sql</File></UpdateDatabase><UpdateText id="Text"><File>DogsOfWar_text.xml</File></UpdateText></InGameActions>]]></InGameActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -60,10 +61,10 @@ CHANGES:
     <None Include="Dogs_of_War.Art.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="GameData1.sql">
+    <Content Include="DogsOfWar.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="GameData1.xml">
+    <Content Include="DogsOfWar_text.xml">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

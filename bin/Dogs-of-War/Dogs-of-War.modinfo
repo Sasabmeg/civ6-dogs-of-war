@@ -36,15 +36,23 @@ CHANGES:
 - Barbarians xp soft cap and level soft cap increased.
 - Slightly increased Spearman and Heavy Chariot strength for Ancient Era balance. (Carefull, barbarian spearman in village is slightly stronger than your warrior, as it should be!)
 - Increased minimum distance between cities, so AI cannot spam them every 4 tiles, on Deity they can spam it faster than you delete them, very annoying.</Description>
-    <Created>1662385268</Created>
+    <Created>1662385571</Created>
     <Teaser>Combat change, balance mod for land domination game modes.</Teaser>
     <Authors>Sasabmeg</Authors>
     <Homepage>http://github.com/Sasabmeg/civ6-dogs-of-war</Homepage>
     <AffectsSavedGames>0</AffectsSavedGames>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
   </Properties>
+  <InGameActions>
+    <UpdateDatabase id="Gameplay">
+      <File>DogsOfWar.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="Text">
+      <File>DogsOfWar_text.xml</File>
+    </UpdateText>
+  </InGameActions>
   <Files>
-    <File>GameData1.sql</File>
-    <File>GameData1.xml</File>
+    <File>DogsOfWar.sql</File>
+    <File>DogsOfWar_text.xml</File>
   </Files>
 </Mod>
