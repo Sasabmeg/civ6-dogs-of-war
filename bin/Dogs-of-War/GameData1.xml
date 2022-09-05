@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GameData1 -->
+<!-- Author: Sasabmeg -->
+<!-- DateCreated: 9/5/2022 2:16:59 PM -->
+<GameData>
+	<BaseGameText>
+		<!-- NEW -->
+		<Row Tag="LOC_ABILITY_MOVE_AFTER_ATTACK_NAME">
+			<Text>Move After Attack</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_MOVE_AFTER_ATTACK_DESCRIPTION">
+			<Text>Can move after attack.</Text>
+		</Row>
+		<Row Tag="LOC_PROMOTION_JUGGERNAUT_NAME">
+			<Text>Juggernaut</Text>
+		</Row>
+		<Row Tag="LOC_PROMOTION_JUGGERNAUT_DESCRIPTION">
+			<Text>Heals at the end of every turn, even if performed actions.</Text>
+		</Row>
+		<Row Tag="LOC_PROMOTION_FORCED_MARCH_NAME">
+			<Text>Forced March</Text>
+		</Row>
+		<Row Tag="LOC_PROMOTION_FORCED_MARCH_DESCRIPTION">
+			<Text>Heals at the end of every turn, even if performed actions.</Text>
+		</Row>
+		<Row Tag="LOC_POLICY_PRAETORIAN_GUARDIANS_NAME">
+			<Text>Praetorian Guardians</Text>
+		</Row>
+		<Row Tag="LOC_POLICY_PRAETORIAN_GUARDIANS_DESCRIPTION">
+			<Text>Wounded units can heal +5 HP in hostile, +10 HP in neutral and +15 HP in friendly territory.</Text>
+		</Row>
+		<Row Tag="LOC_PROMOTION_DOGS_OF_WAR_MELEE_NAME">
+			<Text>Dogs of War (Melee)</Text>
+		</Row>
+		<Row Tag="LOC_PROMOTION_DOGS_OF_WAR_MELEE_DESCRIPTION">
+			<Text>+5 [ICON_Strength] Combat Strength.</Text>
+		</Row>
+		<Row Tag="LOC_PROMOTION_DOGS_OF_WAR_RANGED_NAME">
+			<Text>Dogs of War (Ranged)</Text>
+		</Row>
+		<Row Tag="LOC_PROMOTION_DOGS_OF_WAR_RANGED_DESCRIPTION">
+			<Text>+5 [ICON_Ranged] Ranged Combat Strength against land and naval units.</Text>
+		</Row>
+		<Row Tag="LOC_PROMOTION_DOGS_OF_WAR_ANTI_CAVALRY_NAME">
+			<Text>Dogs of War (Anti-Cavalry)</Text>
+		</Row>
+		<Row Tag="LOC_PROMOTION_DOGS_OF_WAR_ANTI_CAVALRY_DESCRIPTION">
+			<Text>+5 [ICON_Strength] Combat Strength.</Text>
+		</Row>
+		<Row Tag="LOC_PROMOTION_DOGS_OF_WAR_LIGHT_CAVALRY_NAME">
+			<Text>Dogs of War (Light Cavalry)</Text>
+		</Row>
+		<Row Tag="LOC_PROMOTION_DOGS_OF_WAR_LIGHT_CAVALRY_DESCRIPTION">
+			<Text>+5 [ICON_Strength] Combat Strength.</Text>
+		</Row>
+		<Row Tag="LOC_PROMOTION_DOGS_OF_WAR_HEAVY_CAVALRY_NAME">
+			<Text>Dogs of War (Heavy Cavalry)</Text>
+		</Row>
+		<Row Tag="LOC_PROMOTION_DOGS_OF_WAR_HEAVY_CAVALRY_DESCRIPTION">
+			<Text>+5 [ICON_Strength] Combat Strength.</Text>
+		</Row>
+		<Row Tag="LOC_PROMOTION_DOGS_OF_WAR_SIEGE_NAME">
+			<Text>Dogs of War (Siege)</Text>
+		</Row>
+		<Row Tag="LOC_PROMOTION_DOGS_OF_WAR_SIEGE_DESCRIPTION">
+			<Text>+10 [ICON_Ranged] Ranged Combat Strength against disctricts.</Text>
+		</Row>
+		<!-- REPLACED -->
+		<Replace Tag="LOC_PROMOTION_ECHELON_DESCRIPTION">
+			<Text>+5 [ICON_Strength] Combat Strength vs. cavalry and melee units.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_SQUARE_DESCRIPTION">
+			<Text>Double Support bonus and can heal +5 HP in hostile, +10 HP in neutral and +15 HP in friendly territory.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_TORTOISE_DESCRIPTION">
+			<Text>+10 [ICON_Strength] Combat Strength when defending against ranged attacks and can heal +10 HP in both hostile, neutral and friendly territories.</Text>
+		</Replace>
+	</BaseGameText>
+</GameData>
