@@ -34,6 +34,14 @@ where UnitType = 'UNIT_HEAVY_CHARIOT';
 --	Can move after attack.													  --
 --------------------------------------------------------------------------------
 
+INSERT INTO UnitAbilities ("UnitAbilityType", "Name", "Description", "Inactive", "ShowFloatTextWhenEarned", "Permanent") 
+VALUES ('ABILITY_MOVE_AFTER_ATTACK', 'LOC_ABILITY_MOVE_AFTER_ATTACK_NAME', 'LOC_ABILITY_MOVE_AFTER_ATTACK_DESCRIPTION', '0', '0', '1');
+
+INSERT INTO "UnitAbilityModifiers" ("UnitAbilityType", "ModifierId") 
+VALUES ('ABILITY_MOVE_AFTER_ATTACK', 'MOD_MOVE_AFTER_ATTACKING');
+
+INSERT INTO "Types" ("Type", "Kind") VALUES ('ABILITY_MOVE_AFTER_ATTACK', 'KIND_ABILITY');
+
 INSERT INTO "TypeTags" ("Type", "Tag") VALUES ('ABILITY_MOVE_AFTER_ATTACK', 'CLASS_LIGHT_CAVALRY');
 
 
@@ -237,7 +245,7 @@ VALUES ('DOGS_OF_WAR_RANGED_INCREASED_COMBAT_STRENGTH', 'Preview', '+{1_Amount} 
 --------------------------------------------------------------------------------
 update UnitPromotions set Column = '1' where UnitPromotionType = 'PROMOTION_FORWARD_OBSERVERS';
 
-INSERT INTO Types (Type, Kind) VALUES ('PROMOTION_DOGS_OF_WAR_RANGED', 'KIND_PROMOTION');
+INSERT INTO Types (Type, Kind) VALUES ('PROMOTION_DOGS_OF_WAR_SIEGE', 'KIND_PROMOTION');
 
 INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, Specialization, PromotionClass, Column) 
 VALUES ('PROMOTION_DOGS_OF_WAR_SIEGE', 'LOC_PROMOTION_DOGS_OF_WAR_SIEGE_NAME', 'LOC_PROMOTION_DOGS_OF_WAR_SIEGE_DESCRIPTION', '4', '', 'PROMOTION_CLASS_SIEGE', '3');
@@ -346,9 +354,9 @@ insert into GlobalParameters (Name, Value) values ('WAR_WEARINESS_DECAY_TURN_AT_
 delete from GlobalParameters where Name = 'WARMONGER_RAZE_PENALTY_PERCENT';
 insert into GlobalParameters (Name, Value) values ('WARMONGER_RAZE_PENALTY_PERCENT', '100');
 */
+
 update GlobalParameters where Name = 'WAR_WEARINESS_DECAY_TURN_AT_WAR' set Value = '100';
 update GlobalParameters where Name = 'WARMONGER_RAZE_PENALTY_PERCENT' set Value = '150';
-
 
 --------------------------------------------------------------------------------
 ----	LESS CITIES ON SAME AREA	--------------------------------------------
@@ -361,6 +369,7 @@ update GlobalParameters where Name = 'WARMONGER_RAZE_PENALTY_PERCENT' set Value 
 delete from GlobalParameters where Name = 'CITY_MIN_RANGE';
 insert into GlobalParameters (Name, Value) values ('CITY_MIN_RANGE', '5');
 */
+
 update GlobalParameters where Name = 'CITY_MIN_RANGE' set Value = '5';
 
 --------------------------------------------------------------------------------
@@ -372,5 +381,4 @@ update GlobalParameters where Name = 'CITY_MIN_RANGE' set Value = '5';
 update GlobalParameters where Name = 'AI_TURNS_BETWEEN_FRIENDSHIP_OFFERS' set Value = '10';
 update GlobalParameters where Name = 'AI_TURNS_BETWEEN_PEACE_OFFERS' set Value = '10';
 update GlobalParameters where Name = 'AI_TURNS_BETWEEN_TRADES' set Value = '10';
-
 
