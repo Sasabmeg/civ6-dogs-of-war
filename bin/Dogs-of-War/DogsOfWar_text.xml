@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- GameData1 -->
+<!-- DogsOfWar_text -->
 <!-- Author: Sasabmeg -->
 <!-- DateCreated: 9/5/2022 2:16:59 PM -->
 <GameData>
 	<BaseGameText>
 		<!-- NEW -->
-		<Row Tag="LOC_ABILITY_MOVE_AFTER_ATTACK_NAME">
-			<Text>Move After Attack</Text>
-		</Row>
-		<Row Tag="LOC_ABILITY_MOVE_AFTER_ATTACK_DESCRIPTION">
-			<Text>Can move after attack.</Text>
-		</Row>
 		<Row Tag="LOC_PROMOTION_JUGGERNAUT_NAME">
 			<Text>Juggernaut</Text>
 		</Row>
@@ -22,12 +16,6 @@
 		</Row>
 		<Row Tag="LOC_PROMOTION_FORCED_MARCH_DESCRIPTION">
 			<Text>Heals at the end of every turn, even if performed actions.</Text>
-		</Row>
-		<Row Tag="LOC_POLICY_PRAETORIAN_GUARDIANS_NAME">
-			<Text>Praetorian Guardians</Text>
-		</Row>
-		<Row Tag="LOC_POLICY_PRAETORIAN_GUARDIANS_DESCRIPTION">
-			<Text>Wounded units can heal +5 HP in hostile, +10 HP in neutral and +15 HP in friendly territory.</Text>
 		</Row>
 		<Row Tag="LOC_PROMOTION_DOGS_OF_WAR_MELEE_NAME">
 			<Text>Dogs of War (Melee)</Text>

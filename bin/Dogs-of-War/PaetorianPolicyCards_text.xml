@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PaetorianPolicyCards_text -->
+<!-- Author: Sasabmeg -->
+<!-- DateCreated: 9/6/2022 3:53:36 PM -->
+<GameData>
+	<BaseGameText>
+		<!-- NEW -->
+		<Row Tag="LOC_POLICY_PRAETORIAN_GUARDIANS_NAME">
+			<Text>Praetorian Guardians</Text>
+		</Row>
+		<Row Tag="LOC_POLICY_PRAETORIAN_GUARDIANS_DESCRIPTION">
+			<Text>Wounded units can heal +10 HP in neutral and +20 HP in friendly territory.</Text>
+		</Row>
+		<Row Tag="LOC_POLICY_PRAETORIAN_INVADERS_NAME">
+			<Text>Praetorian Invaders</Text>
+		</Row>
+		<Row Tag="LOC_POLICY_PRAETORIAN_INVADERS_DESCRIPTION">
+			<Text>Wounded units can heal +10 HP in neutral and +15 HP in enemy territory.</Text>
+		</Row>
+	</BaseGameText>
+</GameData>

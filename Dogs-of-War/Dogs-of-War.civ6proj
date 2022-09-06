@@ -19,7 +19,7 @@
     <AssemblyName>Dogs-of-War</AssemblyName>
     <RootNamespace>Dogs-of-War</RootNamespace>
     <Homepage>http://github.com/Sasabmeg/civ6-dogs-of-war</Homepage>
-    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="Gameplay"><File>DogsOfWar.sql</File></UpdateDatabase><UpdateText id="Text"><File>DogsOfWar_text.xml</File></UpdateText></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="Gameplay"><File priority="10">AncientEraUnitBalance.sql</File><File priority="9">CavalryChanges.sql</File><File priority="8">MeleeChanges.sql</File><File priority="7">AntiCavalryChanges.sql</File><File priority="6">DogsOfWar.sql</File><File priority="5">PraetorianPolicyCards.sql</File><File priority="4">GlobalParameters.sql</File></UpdateDatabase><UpdateText id="Text"><File>DogsOfWar_text.xml</File><File>PaetorianPolicyCards_text.xml</File><File>CavalryChanges_text.sql</File></UpdateText></InGameActions>]]></InGameActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -28,10 +28,34 @@
     <None Include="Dogs_of_War.Art.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AncientEraUnitBalance.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="AntiCavalryChanges.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CavalryChanges_text.sql">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="DogsOfWar.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="DogsOfWar_text.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CavalryChanges.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GlobalParameters.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="MeleeChanges.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PaetorianPolicyCards_text.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PraetorianPolicyCards.sql">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>
