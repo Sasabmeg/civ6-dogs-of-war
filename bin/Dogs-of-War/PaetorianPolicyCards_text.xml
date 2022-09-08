@@ -17,5 +17,40 @@
 		<Row Tag="LOC_POLICY_PRAETORIAN_INVADERS_DESCRIPTION">
 			<Text>Wounded units can heal +10 HP in neutral and +15 HP in enemy territory.</Text>
 		</Row>
+		<!-- REPLACE -->
+		
+		<!-- melee, anti-cavalry, ranged -->
+		<Replace Tag="LOC_POLICY_AGOGE_DESCRIPTION">
+			<Text>+20% [ICON_Production] Production toward Ancient and Classical era melee, anti-cavalry, and ranged units.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_FEUDAL_CONTRACT_DESCRIPTION">
+			<Text>+20% [ICON_Production] Production toward Ancient, Classical, Medieval, and Renaissance era melee, anti-cavalry, and ranged units.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_MILITARY_FIRST_DESCRIPTION">
+			<Text>+20% [ICON_Production] Production toward all melee, anti-cavalry, and ranged units.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_GRANDE_ARMEE_DESCRIPTION">
+			<Text>+20% [ICON_Production] Production toward Industrial era and earlier melee, anti-cavalry, and ranged units.</Text>
+		</Replace>
+		<!-- light and heavy cavalry -->
+		<Replace Tag="LOC_POLICY_MANEUVER_DESCRIPTION">
+			<Text>+20% [ICON_Production] Production toward Ancient and Classical era heavy and light cavalry units.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_CHIVALRY_DESCRIPTION">
+			<Text>+20% [ICON_Production] Production toward Industrial era and earlier heavy and light cavalry units.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_LIGHTNING_WARFARE_DESCRIPTION">
+			<Text>+20% [ICON_Production] Production for all heavy and light cavalry units.</Text>
+		</Replace>
+		<!-- naval -->
+		<Replace Tag="LOC_POLICY_MARITIME_INDUSTRIES_DESCRIPTION">
+			<Text>+40% [ICON_Production] Production toward Ancient and Classical era naval units.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_PRESS_GANGS_DESCRIPTION">
+			<Text>+40% [ICON_Production] Production toward Industrial era and earlier naval units.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_INTERNATIONAL_WATERS_DESCRIPTION">
+			<Text>+40% [ICON_Production] Production toward all naval units, excluding Carriers.</Text>
+		</Replace>
 	</BaseGameText>
 </GameData>

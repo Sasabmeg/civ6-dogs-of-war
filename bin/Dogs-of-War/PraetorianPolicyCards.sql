@@ -64,18 +64,31 @@ INSERT INTO PolicyModifiers ("PolicyType", "ModifierId") VALUES ('POLICY_PRAETOR
 
 
 --------------------------------------------------------------------------------
-----	REMOVED UNIT PRODUCTION POLICY CARDS	--------------------------------
+----	REDUCED EFFECTIVENESS OF UNIT PRODUCTION POLICY CARDS	----------------
+--	Land 50% reduced to 20% and Naval 100% reduced to 40% production bonus.	  --
 --	Mainly to stop AI unit spam on higher difficulties, player can use the 	  --
 --	Praetorian Guardians policy card to compensate for unit loss and outplay  --
 --	the AI.																	  --
 --	TODO: Add production modifiers to encampment buildings.					  --
 --	TODO: Add combat bonus for units trained at different level of encampment --
 --	district buildings.														  --
+--	TODO: Add free promotion or ability to encampment buildings.			  --
 --------------------------------------------------------------------------------
 
-delete from Policies
-where PolicyType in ('POLICY_AGOGE', 'POLICY_FEUDAL_CONTRACT', 'POLICY_GRANDE_ARMEE', 'POLICY_MILITARY_FIRST', 
-					 'POLICY_MANEUVER', 'POLICY_CHIVALRY', 'POLICY_LIGHTNING_WARFARE',
-					 'POLICY_MARITIME_INDUSTRIES', 'POLICY_PRESS_GANGS', 'POLICY_INTERNATIONAL_WATERS');
+--	melee, anti-cavalry and ranged
+update ModifierArguments set Value = '20' where ModifierId like 'AGOGE_%_PRODUCTION' and Name = 'Amount';
+update ModifierArguments set Value = '20' where ModifierId like 'FEUDALCONTRACT_%_PRODUCTION' and Name = 'Amount';
+update ModifierArguments set Value = '20' where ModifierId like 'MILITARYFIRST_%_PRODUCTION' and Name = 'Amount';
+update ModifierArguments set Value = '20' where ModifierId like 'GRANDEARMEE_%_PRODUCTION' and Name = 'Amount';
+
+--	cavalry
+update ModifierArguments set Value = '20' where ModifierId like 'MANEUVER_%_PRODUCTION' and Name = 'Amount';
+update ModifierArguments set Value = '20' where ModifierId like 'CHIVALRY_%_PRODUCTION' and Name = 'Amount';
+update ModifierArguments set Value = '20' where ModifierId like 'LIGHTNINGWARFARE_%_PRODUCTION' and Name = 'Amount';
+
+--	naval
+update ModifierArguments set Value = '40' where ModifierId like 'MARITIMIEINDUSTRIES_%_PRODUCTION' and Name = 'Amount';
+update ModifierArguments set Value = '40' where ModifierId like 'PRESSGANGS_%_PRODUCTION' and Name = 'Amount';
+update ModifierArguments set Value = '40' where ModifierId like 'INTERNATIONALWATERS_%_PRODUCTION' and Name = 'Amount';
 
 

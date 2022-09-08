@@ -21,6 +21,9 @@ INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES ('P
 INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, Specialization, PromotionClass, Column) 
 VALUES ('PROMOTION_FORCED_MARCH', 'LOC_PROMOTION_FORCED_MARCH_NAME', 'LOC_PROMOTION_FORCED_MARCH_DESCRIPTION', '1', '', 'PROMOTION_CLASS_ANTI_CAVALRY', '3');
 
+update UnitPromotions set Column = '1' where UnitPromotionType = 'PROMOTION_SCHILTRON';
+update UnitPromotions set Column = '3' where UnitPromotionType = 'PROMOTION_SQUARE';
+
 INSERT INTO UnitPromotionModifiers VALUES ('PROMOTION_FORCED_MARCH', 'MAMLUK_HEAL_EVERY_MOVE');
 
 --	swap Schiltron and Square
