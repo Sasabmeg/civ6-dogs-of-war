@@ -14,6 +14,15 @@
 delete from UnitPromotions where UnitPromotionType = 'PROMOTION_AMPHIBIOUS';
 delete from UnitPromotions where UnitPromotionType = 'PROMOTION_TORTOISE';
 
+--	Juggernaut
+INSERT INTO Types (Type, Kind) VALUES ('PROMOTION_JUGGERNAUT', 'KIND_PROMOTION');
+
+INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, Specialization, PromotionClass, Column) 
+VALUES ('PROMOTION_JUGGERNAUT', 'LOC_PROMOTION_JUGGERNAUT_NAME', 'LOC_PROMOTION_JUGGERNAUT_DESCRIPTION', '1', '', 'PROMOTION_CLASS_MELEE', '3');
+
+INSERT INTO UnitPromotionModifiers VALUES ('PROMOTION_JUGGERNAUT', 'MAMLUK_HEAL_EVERY_MOVE');
+
+--	Tortoise
 INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, Specialization, PromotionClass, Column) 
 VALUES ('PROMOTION_TORTOISE', 'LOC_PROMOTION_TORTOISE_NAME', 'LOC_PROMOTION_TORTOISE_DESCRIPTION', '2', '', 'PROMOTION_CLASS_MELEE', '3');
 
@@ -24,15 +33,11 @@ INSERT INTO ModifierArguments (ModifierId, Name, Type, Value, Extra, SecondExtra
 INSERT INTO ModifierArguments (ModifierId, Name, Type, Value, Extra, SecondExtra) VALUES ('TORTOISE_HEAL_EVERYWHERE', 'Amount', 'ARGTYPE_IDENTITY', '10', '', '');
 
 INSERT INTO UnitPromotionModifiers VALUES ('PROMOTION_TORTOISE', 'TORTOISE_HEAL_EVERYWHERE');
+INSERT INTO UnitPromotionModifiers VALUES ('PROMOTION_TORTOISE', 'TORTOISE_DEFENSE_BONUS_VS_RANGED_COMBAT');
 
-INSERT INTO Types (Type, Kind) VALUES ('PROMOTION_JUGGERNAUT', 'KIND_PROMOTION');
-
+--	Promotion tree requirements
 INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES ('PROMOTION_TORTOISE', 'PROMOTION_JUGGERNAUT');
 INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES ('PROMOTION_ZWEIHANDER', 'PROMOTION_TORTOISE');
 INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES ('PROMOTION_URBAN_WARFARE', 'PROMOTION_TORTOISE');
 
-INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, Specialization, PromotionClass, Column) 
-VALUES ('PROMOTION_JUGGERNAUT', 'LOC_PROMOTION_JUGGERNAUT_NAME', 'LOC_PROMOTION_JUGGERNAUT_DESCRIPTION', '1', '', 'PROMOTION_CLASS_MELEE', '3');
-
-INSERT INTO UnitPromotionModifiers VALUES ('PROMOTION_JUGGERNAUT', 'MAMLUK_HEAL_EVERY_MOVE');
 

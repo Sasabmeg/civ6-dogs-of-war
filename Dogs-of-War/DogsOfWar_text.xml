@@ -4,6 +4,7 @@
 <!-- DateCreated: 9/5/2022 2:16:59 PM -->
 <GameData>
 	<BaseGameText>
+		
 		<!-- NEW -->
 		<Row Tag="LOC_PROMOTION_JUGGERNAUT_NAME">
 			<Text>Juggernaut</Text>
